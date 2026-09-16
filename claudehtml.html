@@ -1,0 +1,120 @@
+dex · HTML
+<!doctype html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/3da8cb6082.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>أوقات الصلاة</title>
+  </head>
+  <body class="flex flex-col min-h-screen w-full bg-gray-800 text-right">
+    <h1
+      class="p-4 text-center text-4xl font-bold text-green-700 font-[Thamaneya] border-b-2 border-green-300 text-shadow-lg"
+    >
+      أوقات الصلاة
+    </h1>
+    <div class="flex justify-center p-4" id="searchbar">
+      <div class="relative max-w-md w-full">
+        <!-- Input Bar -->
+        <div
+          class="flex items-center border-b gap-2 border-gray-500/30 h-[46px] overflow-hidden w-full"
+        >
+          <input
+            id="city-input"
+            type="text"
+            placeholder="ابحث عن مدينتك"
+            autocomplete="off"
+            class="w-full h-full outline-none placeholder-gray-500 text-gray-500 bg-transparent text-xl font-[Thamaneya] font-bold flex justify-center items-center text-center"
+          />
+          <button
+            id="search-btn"
+            type="button"
+            class="cursor-pointer bg-green-600 w-10 h-9 rounded-full text-sm font-bold text-white shrink-0"
+          >
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </button>
+        </div>
+ 
+        <!-- Auto-suggestions Dropdown -->
+        <ul
+          id="suggestions-list"
+          class="hidden absolute right-0 left-0 top-[50px] bg-white border border-gray-200 rounded-lg shadow-lg z-50 max-h-60 overflow-y-auto font-[Thamaneya]"
+          dir="rtl"
+        ></ul>
+      </div>
+    </div>
+    <div class="flex flex-col justify-center p-6" id="Big-container">
+      <div
+        class="text-center md:text-center lg:pt-[200px] p-8 lg:text-right"
+        id="Main-container"
+      >
+        <div id="location-info"></div>
+ 
+        <div>
+          <h1 class="font-[Thamaneya] text-3xl text-white">
+            مرحبا بك في موقع أوقات الصلاة
+          </h1>
+          <h2 id="city-name" class="font-[Thamaneya] text-7xl text-gray-300 pt-4">قسنطينة</h2>
+          <h2 id="prayer-date" class="font-[Thamaneya] text-xl text-green-600 font-black p-4">
+            2026 - 08 - 11
+          </h2>
+        </div>
+      </div>
+    </div>
+ 
+    <!-- Added mx-auto and w-full here -->
+    <div
+      class="grid w-fit grid-cols-2 gap-5 mx-auto md:grid-cols-3 lg:grid-cols-6 lg:w-fit lg:gap-7.5"
+      id="Citys-container"
+    >
+      <div
+        class="size-[150px] bg-green-200 rounded-md font-[Thamaneya] flex flex-col items-center justify-center text-2xl font-bold"
+        id="athan1"
+      >
+        الفَجْر
+        <div class="font-black text-4xl p-4" id="time1">4:03</div>
+      </div>
+      <div
+        class="size-[150px] bg-green-400 rounded-md font-[Thamaneya] flex flex-col items-center justify-center text-2xl font-bold"
+        id="athan2"
+      >
+        الشُّرُوق
+        <div class="font-black text-4xl p-4" id="time2">6:15</div>
+      </div>
+      <div
+        class="size-[150px] bg-green-400 rounded-md font-[Thamaneya] flex flex-col items-center justify-center text-2xl font-bold"
+        id="athan3"
+      >
+        الظهر
+        <div class="font-black text-4xl p-4" id="time3">12:37</div>
+      </div>
+      <div
+        class="size-[150px] bg-green-500 rounded-md font-[Thamaneya] flex flex-col items-center justify-center text-2xl font-bold"
+        id="athan4"
+      >
+        العَصْر
+        <div class="font-black text-4xl p-4" id="time4">12:37</div>
+      </div>
+      <div
+        class="size-[150px] bg-green-600 rounded-md font-[Thamaneya] flex flex-col items-center justify-center text-2xl font-bold"
+        id="athan5"
+      >
+        المغرب
+        <div class="font-black text-4xl p-4" id="time5">12:37</div>
+      </div>
+      <div
+        class="size-[150px] bg-green-700 rounded-md font-[Thamaneya] flex flex-col items-center justify-center text-2xl font-bold"
+        id="athan6"
+      >
+        العشاء
+        <div class="font-black text-4xl p-4" id="time6">12:37</div>
+      </div>
+    </div>
+    <script src="Logic.js"></script>
+  </body>
+</html>
