@@ -1,3 +1,9 @@
+<p align="center">
+  <a href="https://pin.it/1cvgSKLkp">
+    <img src="https://i.pinimg.com/736x/ee/51/95/ee5195da10ee0246f0d60870ab0d7fc0.jpg" alt="Prayer Times Banner" width="100%" />
+  </a>
+</p>
+
 # 🕌 أوقات الصلاة — Prayer Times Website
 
 A simple, fast, Arabic (RTL) single-page website that shows daily Islamic prayer times for any Arab city.
